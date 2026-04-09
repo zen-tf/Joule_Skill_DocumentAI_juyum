@@ -1,0 +1,17 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:u="sap.ui.unified">
+    <!-- 중복 피하기 위해 ID 변경 -->
+    <Dialog id="customUploadDialog" title="AI 분석 문서 업로드">
+        <content>
+            <!-- ID 추가 -->
+            <VBox id="dialogVBox" class="sapUiMediumMargin">
+                <u:FileUploader id="customFileUploader" width="100%" placeholder="파일을 선택하세요"/>
+            </VBox>
+        </content>
+        <beginButton>
+            <Button id="submitBtn" text="업로드" type="Emphasized" press=".onUploadSubmit"/>
+        </beginButton>
+        <endButton>
+            <Button id="cancelBtn" text="취소" press=".onCloseDialog"/>
+        </endButton>
+    </Dialog>
+</core:FragmentDefinition>

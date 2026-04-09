@@ -1,0 +1,23 @@
+{
+  "controller/MainView-dbg.controller.js": 1775693512482,
+  "controller/MainView.controller.js": 1775693512482,
+  "model/models.js": 1775693250683,
+  "controller/App.controller.js": 1775693250711,
+  "manifest.json": 1775693250635,
+  "Component.js": 1775693250627,
+  "model/models-dbg.js": 1775693250683,
+  "model/models.js.map": 1775722434139,
+  "i18n/i18n.properties": 1775693250643,
+  "controller/MainView.controller.js.map": 1775722434150,
+  "controller/App-dbg.controller.js": 1775693250711,
+  "controller/App.controller.js.map": 1775722434139,
+  "Component-dbg.js": 1775693250627,
+  "Component.js.map": 1775722434137,
+  "Component-preload.js": 1775722434227,
+  "Component-preload.js.map": 1775722434227,
+  "view/UploadDialog.fragment.xml": 1775693484029,
+  "view/MainView.view.xml": 1775693479433,
+  "view/App.view.xml": 1775693250759,
+  "css/style.css": 1775693250735,
+  "index.html": 1775693250627
+}

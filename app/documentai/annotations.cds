@@ -1,0 +1,1 @@
+using DocumentService as service from '../../srv/service';

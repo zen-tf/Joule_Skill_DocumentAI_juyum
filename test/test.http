@@ -1,0 +1,28 @@
+### 변수 설정 (테스트를 편하게 하기 위함)
+@server = http://localhost:4004
+@service = /odata/v4/document
+
+### [테스트 1] 새로운 데이터 추가 (INSERT)
+# 처음 실행하면 DB에 새로운 줄이 생겨야 합니다.
+POST {{server}}{{service}}/upsertDocument
+Content-Type: application/json
+
+{
+  "documentId": "doc-juyum-001",
+  "businessNumber": "111-22-33333"
+}
+
+### [테스트 2] 기존 데이터 업데이트 (UPDATE)
+# 같은 documentId를 보내되, businessNumber만 바꿔봅니다.
+# 결과적으로 DB에 줄이 늘어나지 않고 번호만 "999-88-77777"로 바뀌어야 성공입니다!
+POST {{server}}{{service}}/upsertDocument
+Content-Type: application/json
+
+{
+  "documentId": "doc-juyum-001",
+  "businessNumber": "999-88-77777"
+}
+
+### [테스트 3] 전체 데이터 조회 (결과 확인용)
+# DB에 실제로 몇 줄이 있는지, 번호가 잘 바뀌었는지 확인합니다.
+GET {{server}}{{service}}/DocumentInfo

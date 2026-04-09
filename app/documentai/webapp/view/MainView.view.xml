@@ -1,0 +1,12 @@
+<mvc:View controllerName="documentai.controller.MainView"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page" title="문서 AI 분석 대시보드">
+        <content>
+            <!-- ID 추가 -->
+            <VBox id="mainVBox" class="sapUiMargin" justifyContent="Center" alignItems="Center" height="100%">
+                <Title id="mainTitle" text="SAP Document Information Extraction" titleStyle="H2" class="sapUiBottomMargin"/>
+                <Button id="openUploadBtn" text="AI 분석 문서 업로드" type="Emphasized" press=".onUploadDialog" icon="sap-icon://upload" />
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
